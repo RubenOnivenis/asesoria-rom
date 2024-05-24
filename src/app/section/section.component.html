@@ -1,0 +1,100 @@
+<div class="bd-example">
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="../../assets/images/employes_happy2.png" data-holder-rendered="true">
+            <div class="carousel-caption d-none d-md-block">
+                <h4>ASESORÍA Y GESTORÍA RUBÉN ONIVENIS</h4><br>
+                <h1>Potenciando el crecimiento de tu empresa,<br> día tras día. </h1><br>
+                <button type="button" class="btn btn-outline-light">¡CONTÁCTANOS!</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="semicircle">
+    <div class="content">
+        <div class="contact-info">
+            <p><i class="fas fa-phone-alt"></i> Llámanos</p>
+            <p>924 031 042</p>
+        </div>
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> Ven a vernos</p>
+            <p>Avenida Damián Téllez Lafuente, 7B, Badajoz</p>
+        </div>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Escríbenos tus dudas</p>
+            <p>infonomeros.com</p>
+        </div>
+    </div>
+</div>
+<div class="half-section">
+    <div class="half-section-left">
+        <img src="../../assets/images/drafics-asesoria.png">
+    </div>
+    <div class="half-section-right">
+        <h2>¡Nuestro trabajo!</h2>
+        <hr>
+        <p class="asesoramiento">Asesoramiento
+        </p>
+        <!-- Primera fila -->
+        <div class="row">
+            <!-- Primera columna -->
+            <div class="col-md-6">
+                <p>Fiscal y Contable</p>
+                <p>Elaboración y presentación de los modelos tributarios necesarios, con un estudio
+                    continuo de la empresa para buscar la situación más favorable para el cliente.</p>
+            </div>
+            <!-- Segunda columna -->
+            <div class="col-md-6">
+                <p>Laboral</p>
+                <p>Asesoramiento y gestión laboral para empresas y autónomos que quieran contratar a empleados o tenga
+                    ya trabajadores.
+                    Estudiamos caso a caso.</p>
+            </div>
+        </div>
+        <!-- Segunda fila -->
+        <div class="row">
+            <!-- Única columna -->
+            <div class="col-md-12">
+                <p>Requerimientos</p>
+                <p>Estudio de notificaciones recibidas por cualquier ciudadano o empresa. Asesoramiento y
+                    presentación de escritos.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="full-width-image">
+    <img src="../../assets/images/apreton_manos.jpg" alt="Imagen de fondo">
+    <div class="overlay">
+        <h2>¡Estamos aquí para ayudarte!</h2><br>
+        <button onclick="window.location.href='tel:924031042'" class="btn btn-primary">¡Llamar ahora!</button>
+    </div>
+</div>
+<script>
+    // Función para verificar si un elemento es visible en la ventana del navegador
+    function isElementVisible(element) {
+        var rect = element.getBoundingClientRect();
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        return (rect.top <= windowHeight);
+    }
+
+    // Función para activar las animaciones cuando los elementos sean visibles en la ventana del navegador
+    function activateAnimations() {
+        var elements = document.querySelectorAll('.fadeIn'); // Seleccionar elementos con la clase fadeIn
+        elements.forEach(function (element) {
+            if (isElementVisible(element)) {
+                element.style.opacity = '1'; // Cambiar la opacidad para activar la animación
+                element.style.transform = 'translateY(0)'; // Cambiar la transformación para activar la animación
+            }
+        });
+    }
+
+    // Activar las animaciones cuando la página haga scroll
+    window.addEventListener('scroll', function () {
+        activateAnimations();
+    });
+
+    // Activar las animaciones cuando la página se carga por primera vez
+    window.addEventListener('DOMContentLoaded', function () {
+        activateAnimations();
+    });
+</script>

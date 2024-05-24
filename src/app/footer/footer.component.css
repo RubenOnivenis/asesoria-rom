@@ -1,0 +1,87 @@
+footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+footer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    /* Tamaño más grande para el título */
+}
+
+.form-control {
+    border-radius: 25px;
+    font-size: 1.25em;
+    /* Tamaño más grande para los campos de entrada */
+    border: 2px solid #1D3557;
+    /* Bordes más visibles */
+}
+
+textarea.form-control {
+    border-radius: 15px;
+    resize: none;
+    height: calc(3 * 38px + 2 * 1.5rem);
+    /* Ajusta la altura para que ocupe el tamaño deseado */
+}
+
+.form-check-label {
+    margin-left: 10px;
+    font-size: 1.25em;
+    /* Tamaño más grande para el texto de la política de privacidad */
+}
+
+.btn {
+    border-radius: 25px;
+    font-size: 1.25em;
+    /* Tamaño más grande para el botón */
+    background-color: #1D3557;
+    /* Color del botón */
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.desc {
+    float: right;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.inputs {
+    float: left;
+}
+
+.desc,
+.inputs {
+    width: 50%;
+}
+
+/* Animaciones para el footer */
+@keyframes fadeInFooter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación al footer */
+footer {
+    opacity: 0;
+    animation: fadeInFooter 1s ease-in-out forwards;
+}
+
+/* Aplicar animación a los elementos del footer */
+footer h2,
+footer p {
+    opacity: 0;
+    animation: fadeInFooter 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+    /* Ajustar el retraso de la animación según sea necesario */
+}

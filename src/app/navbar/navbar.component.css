@@ -1,0 +1,46 @@
+.navbar {
+    background: linear-gradient(to left, #2E2E2E 0%, #868383 100%);
+}
+
+.navbar-brand,
+.nav-link {
+    color: white !important;
+}
+
+.navbar::before,
+.navbar::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.navbar::before {
+    background: rgba(255, 255, 255, 0.2);
+    /* Color y opacidad del círculo */
+    width: 200px;
+    /* Tamaño del círculo */
+    height: 200px;
+    top: -100px;
+    /* Ajusta la posición del círculo */
+    left: -100px;
+}
+
+.navbar::after {
+    background: rgba(255, 255, 255, 0.1);
+    /* Color y opacidad del círculo */
+    width: 300px;
+    /* Tamaño del círculo */
+    height: 300px;
+    top: -150px;
+    /* Ajusta la posición del círculo */
+    left: -150px;
+}
+
+.navbar .content {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    /* Ajusta el ancho del contenido */
+    color: white;
+    /* Color del texto */
+}
